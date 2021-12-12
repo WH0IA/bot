@@ -5,7 +5,7 @@ const token = '5057479971:AAGfRmHycEhBw8pEHNIZv81Ayifws3qXZZI'
 const bot = new TelegramApi(token ,{polling:true})
 
 const http = require('http')
-const fs  = require('fs')
+
 
 const chats = {}
 
@@ -30,7 +30,7 @@ async function getWeather(chatId,city){
   }); 
 }
 
-const file = JSON.parse(fs.readFileSync('russia.json','utf-8'))
+
 
 const Options = {
   reply_markup:{
